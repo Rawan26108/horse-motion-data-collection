@@ -1,154 +1,26 @@
+/* ==========================================================================
+   HORSE SENSOR LOG - Research-Grade Sensor Data Collection Interface
+   Styles & Theme
+   ========================================================================== */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+:root {
+  /* Color Palette */
+  --bg-dark: #080c14;
+  --bg-card: #0e1522;
+  --bg-card-hover: #131d2e;
+  --bg-input: #060910;
 
-body {
-  min-height: 100vh;
-  background: #080c14;
-  color: #e8f0fa;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
+  --border-subtle: #1a2538;
+  --border-focus: #2d4263;
+  --border-active: #00e5ff;
 
-.container {
-  width: 100%;
-  max-width: 700px;
-}
+  --text-main: #d0e0f5;
+  --text-muted: #536b8c;
+  --text-bright: #ffffff;
 
-.header {
-  margin-bottom: 35px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.horse {
-  font-size: 42px;
-}
-
-.brand h1 {
-  font-size: 23px;
-  font-weight: 900;
-  letter-spacing: 2px;
-}
-
-.brand p {
-  color: #00d4ff;
-  font-size: 12px;
-  letter-spacing: 2px;
-  margin-top: 7px;
-}
-
-.recording-card {
-  background: #101927;
-  border: 1px solid #24364a;
-  border-radius: 16px;
-  padding: 40px 25px;
-  text-align: center;
-}
-
-.recording-card h2 {
-  font-size: 17px;
-  letter-spacing: 2px;
-  margin-bottom: 35px;
-}
-
-.timer {
-  font-family: monospace;
-  font-size: 58px;
-  font-weight: bold;
-  color: #00d4ff;
-  margin-bottom: 15px;
-}
-
-#statusText {
-  color: #9aabba;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  margin-bottom: 35px;
-}
-
-.buttons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-}
-
-button {
-  flex: 1;
-  max-width: 240px;
-  min-height: 55px;
-  border: none;
-  border-radius: 9px;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.start-btn {
-  background: #00d4ff;
-  color: #080c14;
-}
-
-.start-btn:hover:not(:disabled) {
-  background: #65e5ff;
-}
-
-.end-btn {
-  background: #e74c5b;
-  color: white;
-}
-
-.end-btn:hover:not(:disabled) {
-  background: #ff6675;
-}
-
-button:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
-}
-
-#uploadStatus {
-  color: #8fa5b9;
-  font-size: 12px;
-  margin-top: 25px;
-  min-height: 18px;
-}
-
-footer {
-  text-align: center;
-  color: #53677d;
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  margin-top: 30px;
-}
-
-@media (max-width: 500px) {
-  .recording-card {
-    padding: 30px 18px;
-  }
-
-  .timer {
-    font-size: 45px;
-  }
-
-  .buttons {
-    flex-direction: column;
-  }
-
-  button {
-    max-width: 100%;
-    width: 100%;
-  }
-}
+  /* Sensor & Status Accents */
+  --color-acc: #00e5ff;       /* Accelerometer Cyan */
+  --color-gyr: #a855f7;       /* Gyroscope Violet */
+  --color-gps: #10b981;       /* GPS Emerald */
+  --color-rec: #ef4444;       /* Recording Red */
+PS C:\Users\shahd mohamed\Downloads\project (1)>
